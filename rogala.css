@@ -1,0 +1,99 @@
+* {
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    background-image: url(luffy.avif);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+#addBtn {
+    background-color: green; 
+    border: 1px solid black;   
+    font-size: 1.3rem;
+    color: white;
+    padding: 10px;
+    width: 120px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#todoList {
+    align-items: center;
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: 280px 190px 120px;
+    padding: 10px;
+}
+
+.deleteBtn {
+    background-color: red; 
+    border: 1px solid black;   
+    font-size: 1.3rem;
+    color: white;
+    padding: 10px;
+    width: 120px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.box-stop {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    width: 650px;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+@media screen and (max-width: 384px) {
+    body {
+        max-width: 384px;
+        background-image: none;
+        background-color: rgb(105, 231, 105);
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    input {
+        font-size: 1.3rem;
+        width: 300px;
+        margin-top: 20px;
+
+    }
+
+    .top, #todoList  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box-stop {
+        backdrop-filter: none;
+    }
+    
+    button {
+        margin-top : 20px;
+        margin-bottom: 20px;
+    }
+
+
+}
